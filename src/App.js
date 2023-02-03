@@ -10,7 +10,7 @@ function App() {
              titulo = "Sismologia  15 Ultimos Movimiento"
       />
       <MyApi
-         subtitulo = "Busqueda Por Magnitud Sismo"      
+         subtitulo = "Busqueda Por Hora Sismo"      
        />
   
      <Footer

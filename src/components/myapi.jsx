@@ -30,7 +30,7 @@ const MyApi = (props) => {
 
     const Ordenar = () => {
         try {
-        const column = 'magnitude';
+        const column = 'hour';
         const tipoOrdenacion = [...apiRest].sort((a,b) => {
                     if(sortUp === true) {
                        setsortUp(false);
@@ -68,9 +68,9 @@ const MyApi = (props) => {
             <thead>
               <tr>
                 <th>Fecha</th>
-                 <th>Hora</th>
+                <th onClick={() => Ordenar()}>Hora</th> 
                  <th>Lugar</th>
-                 <th onClick={() => Ordenar()}>Magnitud</th> 
+                 <th>Magnitud</th>
                  <th>Profundidad</th>
                  <th>info</th>
               </tr>
